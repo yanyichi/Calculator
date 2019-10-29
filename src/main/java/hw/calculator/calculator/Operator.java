@@ -7,5 +7,8 @@ public class Operator {
     }
 
 
+    public double sub(double firstNumber, double secondNumber) {
+        return firstNumber-secondNumber;
+    }
 
 }

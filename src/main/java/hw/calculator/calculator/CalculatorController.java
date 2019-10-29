@@ -18,6 +18,9 @@ public class CalculatorController {
         return operator.add(firstNumber,secondNumber);
     }
 
-
+    @GetMapping("/sub/{firstNumber}/{secondNumber}")
+    public double getSub(@PathVariable double firstNumber, @PathVariable double secondNumber) {
+        return operator.sub(firstNumber,secondNumber);
+    }
 
 }
