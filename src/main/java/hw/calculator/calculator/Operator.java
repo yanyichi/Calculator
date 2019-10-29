@@ -6,9 +6,12 @@ public class Operator {
         return firstNumber+secondNumber;
     }
 
-
     public double sub(double firstNumber, double secondNumber) {
         return firstNumber-secondNumber;
+    }
+
+    public double mul(double firstNumber,double secondNumber) {
+        return firstNumber*secondNumber;
     }
 
     public double div(double firstNumber, double secondNumber) {
@@ -18,5 +21,4 @@ public class Operator {
     public double mod(double firstNumber, double secondNumber) {
         return firstNumber%secondNumber;
     }
-
 }

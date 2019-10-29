@@ -5,7 +5,6 @@ import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-
 @RestController
 @RequestMapping("/api")
 public class CalculatorController {
@@ -21,6 +20,11 @@ public class CalculatorController {
     @GetMapping("/sub/{firstNumber}/{secondNumber}")
     public double getSub(@PathVariable double firstNumber, @PathVariable double secondNumber) {
         return operator.sub(firstNumber,secondNumber);
+    }
+
+    @GetMapping("/mul/{firstNumber}/{secondNumber}")
+    public double getMul(@PathVariable double firstNumber, @PathVariable double secondNumber) {
+        return operator.mul(firstNumber,secondNumber);
     }
 
     @GetMapping("/div/{firstNumber}/{secondNumber}")
