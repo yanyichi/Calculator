@@ -23,4 +23,14 @@ public class CalculatorController {
         return operator.sub(firstNumber,secondNumber);
     }
 
+    @GetMapping("/div/{firstNumber}/{secondNumber}")
+    public double getDiv(@PathVariable double firstNumber, @PathVariable double secondNumber) {
+        return operator.div(firstNumber,secondNumber);
+    }
+
+    @GetMapping("/mod/{firstNumber}/{secondNumber}")
+    public double getMod(@PathVariable double firstNumber, @PathVariable double secondNumber) {
+        return operator.mod(firstNumber,secondNumber);
+    }
+
 }
