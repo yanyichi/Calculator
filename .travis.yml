@@ -1,6 +1,6 @@
 language: java
 install: true
 script:
-  - ./mvnw test -B
+  - ./mvnw test
 before_install:
   - chmod +x mvnw
