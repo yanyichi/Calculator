@@ -9,7 +9,6 @@ import org.springframework.web.bind.annotation.RestController;
 @RequestMapping("/api")
 public class CalculatorController {
 
-
     Operator operator =new Operator();
 
     @GetMapping("/add/{firstNumber}/{secondNumber}")
